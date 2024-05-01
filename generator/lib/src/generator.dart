@@ -942,7 +942,7 @@ You should create a new class to encapsulate the response.
               break;
             case retrofit.Parser.FlutterCompute:
               mapperCode = refer(
-                'await compute(deserialize${_displayString(returnType).replaceFirst('<', '').replaceFirst('>', '')}, $_resultVar.data!)',
+                'await compute(deserialize${_displayString(returnType)}, $_resultVar.data!)',
               );
               break;
           }
